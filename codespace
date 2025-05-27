@@ -1,0 +1,11 @@
+npx create-next-app@latest dreamflux \
+  --app \
+  --typescript \
+  --tailwind \
+  --eslint \
+  --src-dir \
+  --import-alias "@/*"
+
+cd dreamflux
+npm install next-auth prisma @prisma/client
+npx prisma init
